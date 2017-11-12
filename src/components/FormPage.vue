@@ -15,12 +15,12 @@
       <div class="card-body">
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">From currency</label>
-            <input type="text" v-model="fromCurrency" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter from currency">
+            <label for="fromCurrency">From currency</label>
+            <input type="text" v-model="fromCurrency" class="form-control" id="fromCurrency" name="fromCurrency" placeholder="Enter from currency">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">To currency</label>
-            <input type="text" v-model="toCurrency" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter to currency">
+            <label for="toCurrency">To currency</label>
+            <input type="text" v-model="toCurrency" class="form-control" id="toCurrency" name="toCurrency" placeholder="Enter to currency">
           </div>
           <button type="submit" class="btn btn-primary" @click.prevent="getCurrency">Get currency</button>
         </form>
